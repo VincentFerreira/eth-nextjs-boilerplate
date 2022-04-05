@@ -56,17 +56,16 @@ export const Header = () => {
 
   const navItems = [
     {
-      text: 'home',
-      href: '/'
+      text: 'The Dungeon',
+      href: '/dungeon'
     },
     {
-      text: 'about',
+      text: 'Bestiary',
+      href: '/bestiary'
+    },
+    {
+      text: 'About us',
       href: '/about',
-      icon: <InformationCircleIcon className="h-6 w-6" />
-    },
-    {
-      text: '404 page',
-      href: '/error',
       icon: <InformationCircleIcon className="h-6 w-6" />
     }
   ]
@@ -84,8 +83,8 @@ export const Header = () => {
           <Box fontWeight="bold" fontSize={[20, 20, 20]}>
             <NextLink href="/" passHref>
               <Link className="center flex gap-2">
-                <span>👽</span>
-                <span className="text-xl">ilyxium</span>
+                <span>🏰</span>
+                <span className="text-xl">Dungeon Business</span>
               </Link>
             </NextLink>
           </Box>
@@ -101,7 +100,22 @@ export const Header = () => {
                 <NavItem key={index} href={navItem.href}>
                   <Text className="capitalize">{navItem.text}</Text>
                 </NavItem>
+                
               ))}
+               <Link 
+               style={{ color: 'white', cursor: 'pointer' }}
+               isExternal={true}
+               href="https://app.gitbook.com/s/6i2TOectaj1DkDdvwWJe/gameplay/the-dungeon">
+                <Text
+                  color="#fff"
+                  fontSize={[16, 16, 16, 18]}
+                  fontWeight={600}
+                  display="block"
+                  width="auto"
+                >
+                  Whitepaper
+                </Text>
+              </Link>
             </HStack>
 
             {/* Connect Wallet Button */}
@@ -115,7 +129,7 @@ export const Header = () => {
                 </>
               ) : (
                 <>
-                  <Text className="capitalize">{'connect'}</Text>
+                  <Text className="capitalize">{'Connect'}</Text>
                   <LoginIcon className="w-5 h-5" />
                 </>
               )}
@@ -166,11 +180,10 @@ export const Header = () => {
               {/* Alien Logo */}
               <NextLink href="/">
                 <Link className="center flex gap-2">
-                  <span>👽</span>
-                  <span className="text-xl">ilyxium</span>
+                  <span>🏰</span>
+                  <span className="text-xl">Dungeon Business</span>
                 </Link>
               </NextLink>
-
               {/* Wallet and Close Button Wrapper */}
               <Flex gap="0.5rem">
                 {/* Connect Wallet Button */}
@@ -226,8 +239,7 @@ export const Header = () => {
               paddingX="1.5rem"
               position="absolute"
             >
-              {/* Twitter Link - URL SHOULD BE UPDATED */}
-              <SocialIcon bgColor="white" url="https://twitter.com/ilyxium" target="_blank" />
+              <SocialIcon bgColor="white" url="https://twitter.com/cryptopatapouf" target="_blank" />
 
             </Flex>
           </DrawerBody>

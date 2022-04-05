@@ -6,7 +6,7 @@ import { WalletProvider } from '../context/wallet-provider'
 import { Page } from '../components/Page'
 import { theme } from '../styles/theme'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <WagmiProvider autoConnect>
         <ChakraProvider theme={theme}>
@@ -18,4 +18,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default App

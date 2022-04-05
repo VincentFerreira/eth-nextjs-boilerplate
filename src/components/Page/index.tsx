@@ -19,12 +19,11 @@ export const Page: FC = ({ children }) => {
   return (
     <>
       <Head>
-        <title>ilyxium</title>
+        <title>Dungeon Business</title>
         <meta name="description" content="Ethereum + Next.js DApp Boilerplate" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Flex direction="column" backgroundColor="#1F1B24">
+      <Flex direction="column" backgroundImage='url("/dungeon-bg.jpg")'>
         <Header />
         <main>{children}</main>
         <Footer />
@@ -34,5 +33,5 @@ export const Page: FC = ({ children }) => {
 }
 
 const Footer = () => {
-  return <Flex height="10%"></Flex>
+  return <Flex height="100%"></Flex>
 }

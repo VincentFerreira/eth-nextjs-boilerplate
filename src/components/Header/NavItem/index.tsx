@@ -4,7 +4,7 @@ import { FC } from 'react'
 
 export const NavItem: FC<LinkProps> = ({ children, href }) => (
   <NextLink href={href} passHref>
-    <Link style={{ color: '#BB86FC', cursor: 'pointer' }}>
+    <Link style={{ color: 'white', cursor: 'pointer' }}>
       <Text
         color="#fff"
         fontSize={[16, 16, 16, 18]}

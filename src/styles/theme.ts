@@ -9,7 +9,8 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: '#1F1B24',
+        height: 'auto',
+        backgroundImage: 'url("/dungeon-bg.jpg")',
         color: 'white'
       }
     }

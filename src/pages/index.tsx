@@ -19,49 +19,35 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>DApp Boilerplate</title>
+        <title>Dungeon Business</title>
         <meta name="description" content="ETH + Next.js DApp Boilerplate by ilyxium" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h2 className={styles.title}>
-          Welcome
+          Opening soon !
         </h2>
 
         <div className={styles.grid}>
           <Link href='https://twitter.com/ilyxium' isExternal>
             <Button
-              backgroundColor="#BB86FC"
+              backgroundColor="hsla(11,80%,31%,1)"
               borderRadius="25px"
+              borderColor="#b35b13"
+              borderWidth="2px"
               margin={2.5}
               _hover={{
-                bg: '#121212'
+                bg: 'hsla(11,80%,31%,1)'
               }}
               _active={{
-                bg: '#121212'
+                bg: 'hsla(11,80%,31%,1)'
               }}
               onClick={() => ""}
             >
-              <p>Follow me on twitter</p>
+              <p>Follow us on twitter</p>
             </Button>
           </Link>
-          
-
-          <Button
-              backgroundColor="#32CD32"
-              borderRadius="25px"
-              margin={2.5}
-              _hover={{
-                bg: '#121212'
-              }}
-              _active={{
-                bg: '#121212'
-              }}
-              onClick={async () => await sendTransaction()}
-            >
-              <p>Donate some ETH</p>
-            </Button>
         </div>
       </main>
     </div>
